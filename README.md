@@ -20,6 +20,9 @@ Se integró además un sistema de **control de altura (THC)**
 
 ![PANTOGRAFO-NEW](https://github.com/user-attachments/assets/38fd0095-8a30-49a6-a8e4-12ce7c9c6ac3)
 
+![PLASMA](https://github.com/user-attachments/assets/8a1aa609-149b-4654-a0cc-41850d78b9cd)
+
+
 ## 🎯 Objetivos
 
 - Sustituir el sistema CNC obsoleto por uno moderno y confiable.
