@@ -70,7 +70,6 @@ Para ello se analizaron varias opciones que justificaran la actualización del e
 •	Elevador CNC de 100mm, 2400 mm/min, JYKB-100-DC24V, T3, THC, para antorcha de corte por Plasma
 •	
 
-CNC	THC	Torch Lifter
  	 	 
 
 <img width="1214" height="299" alt="image" src="https://github.com/user-attachments/assets/8217d2ff-d23e-4de5-af97-619208c1deb9" />
@@ -107,11 +106,11 @@ En sistemas como FangLing, , la vinculación se realiza mediante:
 
 ## 2.3 CICLO DE FUNCIONAMIENTO.
 
-Paso 1:  El CNC, para dar inicio al movimiento consulta el estado de posición, si ningún fin de carrera esta activo, se desplaza hasta la posición de inicio de corte. 
-Paso 2: Para iniciar el corte, el elevador de torcha desciende hasta hacer contacto con la chapa, y luego asciende una distancia predeterminada para que el escudo no esté en contacto con la chapa al momento del pinchazo, lo que provocaría el desgaste prematuro de consumibles. 
-Paso 3: La fuente recibe la señal de corte y activa el proceso de arco piloto, comprueba la señal de arco transferido durante un tiempo determinado y de sostenerse activa continua e inicia el sensado de altura. El sensado de altura se obtiene mediante la medición del voltaje de arco establecido entre el electrodo de corte y el material que se esta cortando. Este voltaje varía, dependiendo de muchos factores, principalmente la velocidad de desplazamiento y el espesor de corte. Para obtener la medición se utiliza un divisor de voltaje colocado en la fuente de plasma para adaptar la señal a valores que pueda medir el THC. La fuente de plasma entrega voltajes que van desde los 100v a los 200v , se utiliza un divisor de voltaje de relación 1:50 para acondicionar esos niveles. Si la tensión de arco excede los limites se emite una señal de alarma y se detiene el movimiento y el proceso de corte. 
+Paso 1:  El CNC, para dar inicio al movimiento consulta el estado de posición, si ningún fin de carrera esta activo, se desplaza hasta la posición de inicio de corte. \
+Paso 2: Para iniciar el corte, el elevador de torcha desciende hasta hacer contacto con la chapa, y luego asciende una distancia predeterminada para que el escudo no esté en contacto con la chapa al momento del pinchazo, lo que provocaría el desgaste prematuro de consumibles. \
+Paso 3: La fuente recibe la señal de corte y activa el proceso de arco piloto, comprueba la señal de arco transferido durante un tiempo determinado y de sostenerse activa continua e inicia el sensado de altura. El sensado de altura se obtiene mediante la medición del voltaje de arco establecido entre el electrodo de corte y el material que se esta cortando. Este voltaje varía, dependiendo de muchos factores, principalmente la velocidad de desplazamiento y el espesor de corte. Para obtener la medición se utiliza un divisor de voltaje colocado en la fuente de plasma para adaptar la señal a valores que pueda medir el THC. La fuente de plasma entrega voltajes que van desde los 100v a los 200v , se utiliza un divisor de voltaje de relación 1:50 para acondicionar esos niveles. Si la tensión de arco excede los limites se emite una señal de alarma y se detiene el movimiento y el proceso de corte. \
 Paso 4: se desplaza hasta el siguiente pinchazo y se repite desde el paso 1.
-Esta es una simplificación de todo el funcionamiento ya que existen muchos mas pasos dependiendo de la configuración y programación del CNC, como ser bloqueo del THC, disminucion de velocidad en curvas, detección de colisión, detección de sangría, etc.
+Esta es una simplificación de todo el funcionamiento ya que existen muchos mas pasos dependiendo de la configuración y programación del CNC, como ser bloqueo del THC, disminucion de velocidad en curvas, detección de colisión, detección de sangría, etc.\
  
 ## 2.4 DESARROLLO DE LA INSTALACION
 El desafío principal de este desarrollo fue poder identificar como funcionaban los distintos dispositivos y como se vinculaban entre ellos, ya que no tenía disponible esa información de parte del fabricante de la maquina por razones de confidencialidad, lo que llevo a hacer una ingeniería inversa de la maquina
